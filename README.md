@@ -5,31 +5,35 @@
 ## Установка
 
 1. Клонируем репозиторий:
-```bash
 git clone (https://github.com/Gasuaska/read_csv_file_test_task.git)
+
 cd read_csv_file_test_task
+
 Создаём и активируем виртуальное окружение:
+
 python -m venv venv
+
 source venv/bin/activate  # Linux/macOS
+
 venv\Scripts\activate     # Windows
+
 Устанавливаем зависимости:
+
 pip install -r requirements.txt
+
 Использование
+
 python main.py --files path/to/file1.csv path/to/file2.csv --report performance
+
 --files — пути к CSV-файлам (можно несколько)
+
 
 --report — имя отчёта (например, performance)
 
-Пример вывода в консоль:
-
-Position           Average Performance
---------------------------------------
-Backend Developer           4.83
-Frontend Developer          4.65
-...
-
 Запуск тестов:
+
 pytest --cov=.
+
 Используется pytest и pytest-cov
 
 Покрытие основных функций: cli.py, reader.py и main.py
