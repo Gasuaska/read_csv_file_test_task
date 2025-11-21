@@ -10,7 +10,7 @@ def main():
     sorted = sorted_stats(avg)
     print(tabulate(
         sorted,
-        headers=['Position', 'Average Performance'],
+        headers=['Position', 'Performance'],
         tablefmt='simple'
         ))
 
