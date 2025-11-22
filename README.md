@@ -4,26 +4,27 @@
 
 ## Установка
 
-1. Клонируем репозиторий:
-git clone (https://github.com/Gasuaska/read_csv_file_test_task.git)
+Клонируем репозиторий:
 
-cd read_csv_file_test_task
+```git clone https://github.com/Gasuaska/read_csv_file_test_task.git```
+
+```cd read_csv_file_test_task```
 
 Создаём и активируем виртуальное окружение:
 
-python -m venv venv
+```python -m venv venv```
 
-source venv/bin/activate  # Linux/macOS
+```source venv/bin/activate  # Linux/macOS```
 
-venv\Scripts\activate     # Windows
+```venv\Scripts\activate     # Windows```
 
 Устанавливаем зависимости:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 Использование
 
-python main.py --files path/to/file1.csv path/to/file2.csv --report performance
+```python main.py --files path/to/file1.csv path/to/file2.csv --report performance```
 
 --files — пути к CSV-файлам (можно несколько)
 
@@ -32,7 +33,7 @@ python main.py --files path/to/file1.csv path/to/file2.csv --report performance
 
 Запуск тестов:
 
-pytest --cov=.
+```pytest --cov=.```
 
 Используется pytest и pytest-cov
 
